@@ -46,3 +46,24 @@ network : Paramatrages réseaux du container LXC
 DNS : Parametrage DNS : 1.1.1.1 8.8.8.8
 
 note : pour avoir les Container Templates se rendre dans local > CT Templates > Templates et télecharger le template de container LXC voulu
+
+#Update les CT Templates :
+pveam update
+
+# Editer les osurces listes pour ne pointer que sur la version communautaire :
+
+/etc/apt/sources.list
+
+deb http://ftp.fr.debian.org/debian bullseye main contrib
+
+deb http://ftp.fr.debian.org/debian bullseye-updates main contrib
+
+# security updates
+deb http://security.debian.org bullseye-security main contrib
+
+#Community MAJ sans souscription
+deb http://download.proxmox.com/debian bullseye pve-no-subscription
+
+Commenter le contenu du fichier /etc/apt/sources.list.d/pve-enterprise.list
+
+#deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise
