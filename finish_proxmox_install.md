@@ -31,23 +31,36 @@ sed -Ezi.bak "s/(Ext.Msg.show\(\{\s+title: gettext\('No valid sub)/void\(\{ \/\/
 En haut à droite en bleu cliquer sur **CREATE VM** 
 
 **General** : Donner un nom à la VM
+
 **OS**      : Choisir source d'installation : ISO / CD ...
+
 **System** : Laisser par default
+
 **Hard Disk** : CHoisir la taille du HDD
-**CPU** : Choisir le nbr de cores à utiliser pour l
+
+**CPU** : Choisir le nbr de cores
+
 **Memory** : Taille memoire allouée à la VM
+
 **Network** : Configuration reseau VM
+
 **Confirm** : Recapitulatif avant confirmation de la creation de la machine
 
 ### 8 : Creer un container LXC 
-Cliquer sur Create CT
+Cliquer sur **Create CT**
 
 **General** : Donner un nom hostname + Mot de Passe (longueur 8 ou +)
+
 **OS** : choisir le template qu'on a prealablement telechargé avant
+
 **Root Disk** : taille du disque du container LXC
+
 **CPU** : Nombre de cores
+
 **memory** : taille de la memoire du Container LXC
+
 **network** : Paramatrages réseaux du container LXC
+
 **DNS** : Parametrage DNS : 1.1.1.1 8.8.8.8
 
 **Note** : Pour avoir les Container Templates se rendre dans **local > CT Templates > Templates** et télecharger le template de container LXC voulu
