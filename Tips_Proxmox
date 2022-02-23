@@ -1,0 +1,4 @@
+# Fix “CT is locked (rollback)” on Proxmox VE (PVE) 
+
+To unlock Container/CT on proxmox : 
+ - pct unlock <containerID>
